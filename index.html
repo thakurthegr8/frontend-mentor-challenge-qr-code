@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+      :root{
+        --mobile:375px;
+        --desktop: 1440px;
+        --white:hsla(0, 0%, 100%,100%);
+        --lightGray:hsla(212, 45%, 89%,100%);
+        --grayishBlue:hsla(220, 15%, 55%,100%);
+        --darkBlue:hsla(218, 44%, 22%,100%);
+        --preferredSize:15px;
+      }
+      *{
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+      .attribution {
+        font-size: var(--preferredSize);
+        text-align: center;
+        display:flex;
+        min-height: 100vh;
+        width: 100%;
+        font-family: 'Outfit', sans-serif;
+        background: var(--lightGray);
+        justify-content: center;
+        align-items: center;
+      }
+      .card{
+        background-color: var(--white);
+        padding: 0.75rem;
+        border-radius: 1em;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .column-layout{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items:center;
+      }
+      .qr-image{
+        max-width: 16rem;
+        border-radius: 0.75rem;
+      }
+      .qr-heading{
+        max-width: 14rem;
+        font-size: 16px;
+        margin: 0.5rem 0;
+        color: var(--darkBlue);
+        text-align: center;
+      }
+      .qr-description{
+        max-width: 15.5rem;
+        color: var(--grayishBlue);
+      }
+      .description-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        padding: 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="attribution">
+      <div class="card">
+        <div class="column-layout">
+          <img src="images/image-qr-code.png" class="qr-image"/>
+          <div class="description-container">
+          <h1 class="qr-heading">Improve your front-end skills by building your projects</h1>
+          <p class="qr-description">Scan the qr code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
